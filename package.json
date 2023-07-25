@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "npx nx run-many --target=start --parallel --maxParallel=100"
+    "start": "nx run-many --target=serve --parallel --maxParallel=100",
+    "start:app": "nx serve comment-system-app",
+    "start:api": "nx serve comment-system-api"
   },
   "private": true,
   "dependencies": {
