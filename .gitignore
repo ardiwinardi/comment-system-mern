@@ -42,3 +42,6 @@ Thumbs.db
 .env
 .env.development
 .env.production
+
+# Logs
+/logs
