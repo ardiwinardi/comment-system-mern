@@ -1,4 +1,4 @@
-import { User } from '@api/src/shared/interfaces/user';
+import { User } from '@src/shared/interfaces/user';
 import mongoose from 'mongoose';
 import { userSchema } from './user.schema';
 const { Schema } = mongoose;

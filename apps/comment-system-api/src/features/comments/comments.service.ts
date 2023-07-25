@@ -1,7 +1,8 @@
+import { NotFoundException } from '@src/shared/exceptions/not-found.exception';
 import { Model } from 'mongoose';
 import { Inject, Service } from 'typedi';
-import { NotFoundException } from '../../shared/exceptions/not-found.exception';
 import { CreateCommentDTO } from './dto/create-comment.dto';
+
 import { UpdateCommentDTO } from './dto/update-comment.dto';
 import { Comment } from './shemas/comment.schema';
 

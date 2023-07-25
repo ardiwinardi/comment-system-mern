@@ -14,10 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {
-      "@app/src/*": ["apps/comment-system-app/src/*"],
-      "@api/src/*": ["apps/comment-system-api/src/*"]
-    }
+    "paths": {}
+    // "paths": {
+    //   "@app/src/*": ["apps/comment-system-app/src/*"],
+    //   "@api/src/*": ["apps/comment-system-api/src/*"]
+    // }
   },
   "exclude": ["node_modules", "tmp"]
 }

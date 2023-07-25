@@ -1,7 +1,7 @@
 import { NextFunction, Request, Response } from 'express';
 import { Service } from 'typedi';
 
-import { validateId, validatePayload } from '@api/src/shared/commons/validate';
+import { validateId, validatePayload } from '@src/shared/commons/validate';
 import { CommentsService } from './comments.service';
 import { CreateCommentDTO } from './dto/create-comment.dto';
 import { UpdateCommentDTO } from './dto/update-comment.dto';
