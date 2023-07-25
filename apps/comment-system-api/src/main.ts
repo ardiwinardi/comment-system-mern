@@ -1,21 +1,8 @@
-/**
- * This is not a production server yet!
- * This is only a minimal backend to get started.
- */
+import 'reflect-metadata';
+import Container from 'typedi';
+import App from './app';
+import { CommentsRoute } from './features/comments/comments.route';
 
-import express from 'express';
-import * as path from 'path';
+const app = new App([Container.get(CommentsRoute)]);
 
-const app = express();
-
-app.use('/assets', express.static(path.join(__dirname, 'assets')));
-
-app.get('/api', (req, res) => {
-  res.send({ message: 'Welcome to comment-system-api!' });
-});
-
-const port = process.env.PORT || 3000;
-const server = app.listen(port, () => {
-  console.log(`Listening at http://localhost:${port}/api`);
-});
-server.on('error', console.error);
+app.listen();
